@@ -1,0 +1,17 @@
+int n1,n2,res;
+
+protected void page_load(object sender,EventArgs e)
+{
+
+}
+
+protected void Button1_Click(object sender,EventArgs e)
+{
+
+localhost.webservice s= new localhost.webservice();
+n1=Convert.ToInt32(TextBox1.Text);
+n2=Convert.ToInt32(TextBox2.Text);
+res=s.add(n1,n2);
+Response.write("addn is" +res);
+}
+}
